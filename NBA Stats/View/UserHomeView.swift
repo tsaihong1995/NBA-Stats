@@ -9,7 +9,20 @@ import SwiftUI
 
 struct UserHomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            List(1 ..< 5) { number in
+                NavigationLink(destination: Text("Detail")) {
+                    TeamCardView()
+                }
+                
+            }
+            .navigationBarHidden(true)
+        }
+        
+
+        
+
     }
 }
 

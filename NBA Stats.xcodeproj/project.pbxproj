@@ -8,18 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		2B297511264C1B9B0091FBDD /* NBA_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B297510264C1B9B0091FBDD /* NBA_StatsApp.swift */; };
-		2B297513264C1B9B0091FBDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B297512264C1B9B0091FBDD /* ContentView.swift */; };
+		2B297513264C1B9B0091FBDD /* TeamCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B297512264C1B9B0091FBDD /* TeamCardView.swift */; };
 		2B297515264C1B9C0091FBDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B297514264C1B9C0091FBDD /* Assets.xcassets */; };
 		2B297518264C1B9C0091FBDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B297517264C1B9C0091FBDD /* Preview Assets.xcassets */; };
+		2B297523264C21520091FBDD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B297522264C21520091FBDD /* Constants.swift */; };
+		2B297525264C3C0D0091FBDD /* UserHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B297524264C3C0D0091FBDD /* UserHomeView.swift */; };
+		2B297527264C45B40091FBDD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B297526264C45B40091FBDD /* APIService.swift */; };
+		2B297529264C464C0091FBDD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B297528264C464C0091FBDD /* Team.swift */; };
+		2B29752B264C46AA0091FBDD /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29752A264C46AA0091FBDD /* ApiResponse.swift */; };
+		2B29752D264C4ADF0091FBDD /* SelectTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29752C264C4ADF0091FBDD /* SelectTeamsView.swift */; };
+		2B29752F264C58810091FBDD /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29752E264C58810091FBDD /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B29750D264C1B9B0091FBDD /* NBA Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B297510264C1B9B0091FBDD /* NBA_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBA_StatsApp.swift; sourceTree = "<group>"; };
-		2B297512264C1B9B0091FBDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B297512264C1B9B0091FBDD /* TeamCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardView.swift; sourceTree = "<group>"; };
 		2B297514264C1B9C0091FBDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B297517264C1B9C0091FBDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B297519264C1B9C0091FBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B297522264C21520091FBDD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B297524264C3C0D0091FBDD /* UserHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeView.swift; sourceTree = "<group>"; };
+		2B297526264C45B40091FBDD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2B297528264C464C0091FBDD /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		2B29752A264C46AA0091FBDD /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		2B29752C264C4ADF0091FBDD /* SelectTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamsView.swift; sourceTree = "<group>"; };
+		2B29752E264C58810091FBDD /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,11 @@
 		2B29750F264C1B9B0091FBDD /* NBA Stats */ = {
 			isa = PBXGroup;
 			children = (
+				2B297522264C21520091FBDD /* Constants.swift */,
+				2B297521264C212D0091FBDD /* Model */,
+				2B297520264C211B0091FBDD /* ViewModel */,
+				2B29751F264C21100091FBDD /* View */,
 				2B297510264C1B9B0091FBDD /* NBA_StatsApp.swift */,
-				2B297512264C1B9B0091FBDD /* ContentView.swift */,
 				2B297514264C1B9C0091FBDD /* Assets.xcassets */,
 				2B297519264C1B9C0091FBDD /* Info.plist */,
 				2B297516264C1B9C0091FBDD /* Preview Content */,
@@ -67,6 +84,34 @@
 				2B297517264C1B9C0091FBDD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B29751F264C21100091FBDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B297512264C1B9B0091FBDD /* TeamCardView.swift */,
+				2B29752C264C4ADF0091FBDD /* SelectTeamsView.swift */,
+				2B29752E264C58810091FBDD /* SearchBar.swift */,
+				2B297524264C3C0D0091FBDD /* UserHomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B297520264C211B0091FBDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2B297521264C212D0091FBDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B29752A264C46AA0091FBDD /* ApiResponse.swift */,
+				2B297526264C45B40091FBDD /* APIService.swift */,
+				2B297528264C464C0091FBDD /* Team.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B297513264C1B9B0091FBDD /* ContentView.swift in Sources */,
+				2B297529264C464C0091FBDD /* Team.swift in Sources */,
+				2B297525264C3C0D0091FBDD /* UserHomeView.swift in Sources */,
+				2B297527264C45B40091FBDD /* APIService.swift in Sources */,
+				2B29752B264C46AA0091FBDD /* ApiResponse.swift in Sources */,
+				2B297513264C1B9B0091FBDD /* TeamCardView.swift in Sources */,
+				2B29752F264C58810091FBDD /* SearchBar.swift in Sources */,
+				2B29752D264C4ADF0091FBDD /* SelectTeamsView.swift in Sources */,
 				2B297511264C1B9B0091FBDD /* NBA_StatsApp.swift in Sources */,
+				2B297523264C21520091FBDD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

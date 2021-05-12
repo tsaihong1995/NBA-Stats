@@ -9,8 +9,10 @@ import SwiftUI
 
 struct TeamCardView: View {
     var body: some View {
-        GroupBox {
-            VStack(spacing: 5) {
+        RoundedRectangle(cornerRadius: 10, style: .circular)
+            .frame(width: UIScreen.main.bounds.width-30, height: 100)
+            .foregroundColor(Color(UIColor.systemGray5))
+            .overlay(VStack(spacing: 5) {
                 HStack {
                     VStack{
                         Text("W - L")
@@ -22,10 +24,10 @@ struct TeamCardView: View {
                     Image("1")
                         .resizable()
                         .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .padding(.horizontal)
+                        .padding(.horizontal, 40)
                     VStack{
                         Text("No.12 (East)")
-                        Text("Streak: 3")
+                        Text("STRK: 3")
                     }
                     .frame(width: 75, alignment: .center)
                     .font(.system(size: 10))
@@ -41,9 +43,8 @@ struct TeamCardView: View {
 //                    Spacer()
 //                }
                 
-            }
-        }//-: GroupBox
-        .padding(.horizontal)
+            })
+        .shadow(color: Color.gray.opacity(0.4), radius: 5)
         
         
     }
@@ -53,8 +54,7 @@ struct TeamCardView_Previews: PreviewProvider {
     static var previews: some View {
         Group{
             TeamCardView()
-                .previewLayout(.sizeThatFits)
-                .padding()
+                
         
             TeamCardView()
                 .previewLayout(.sizeThatFits)
