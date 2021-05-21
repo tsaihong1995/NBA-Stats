@@ -13,7 +13,7 @@ public class Constants {
             case key1 = "x-rapidapi-host"
             case key2 = "x-rapidapi-key"
             case value1 = "api-nba-v1.p.rapidapi.com"
-            case value2 = "50de1bf993msh6dcc1621fbd8bddp1b2a52jsn134f25ade156"
+            case value2 = "Secret"
         }
     }
 }
