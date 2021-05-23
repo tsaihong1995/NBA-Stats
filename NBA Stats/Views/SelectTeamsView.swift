@@ -118,6 +118,7 @@ struct CustomButton: View {
             //Check Favorite Teams
             for favoriteTeam in teamListVM.faviores {
                 if (favoriteTeam.team.id == Array(teamName)[0].key) {
+                    selectedTeams.append(Array(teamName)[0].key)
                     isSelected = true
                 }
             }
