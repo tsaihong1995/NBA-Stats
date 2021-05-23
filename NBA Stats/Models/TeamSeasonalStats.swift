@@ -473,7 +473,7 @@ extension TeamSeasonalStats {
     let lastName: String
     let position: String
     let primaryPosition: String
-    let jerseyNumber: String
+    let jerseyNumber: String?
     let srID: String
     let reference: String
     let total: Total

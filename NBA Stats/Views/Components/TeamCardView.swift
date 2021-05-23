@@ -22,7 +22,7 @@ struct TeamCardView: View {
                         Text("\(teamVM.team.wins) - \(teamVM.team.losses)")
                     }
                     .font(.footnote)
-                    .frame(width: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 95, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     VStack {
                         Image("\(teamVM.team.id)")
                             .resizable()
@@ -36,25 +36,20 @@ struct TeamCardView: View {
                             .font(.footnote)
                     }
                     
-                    VStack(spacing: 5){
-                        Text("No. \(teamVM.team.calcRank.divRank)")
-                        Text("STK: \(teamVM.team.streak.kind.rawValue)-\(teamVM.team.streak.length)")
-                        
+                    VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 5){
+                        if let conference = teamVM.conference {
+                            Text("No. \(teamVM.team.calcRank.confRank) @ \(String(conference.name.prefix(4)))")
+                            Text("STK: \(teamVM.team.streak.kind.rawValue.capitalized)-\(teamVM.team.streak.length)")
+                            
+                        }
                     }
-                    .frame(width: 90, alignment: .center)
+                    .frame(width: 95, alignment: .center)
                     .font(.footnote)
                 }
-
                 
-//                HStack {
-//                    Text("Upcoming Game:")
-//                        .font(.caption)
-//                        .fontWeight(.semibold)
-//                    Spacer()
-//                }
                 
             })
-        .shadow(color: Color.gray.opacity(0.7), radius: 3)
+        
         
         
     }
@@ -63,10 +58,10 @@ struct TeamCardView: View {
 struct TeamCardView_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            TeamCardView(teamVM: TeamViewModel(team: myTeam))
-                
-        
-            TeamCardView(teamVM: TeamViewModel(team: myTeam))
+            TeamCardView(teamVM: TeamViewModel(team: myTeam, conference: myConference))
+            
+            
+            TeamCardView(teamVM: TeamViewModel(team: myTeam, conference: myConference))
                 .previewLayout(.sizeThatFits)
                 .padding()
                 .colorScheme(.dark)

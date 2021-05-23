@@ -27,8 +27,6 @@ public class APIService {
                                 
                     completionHandler(.success(decodedData))
 
-                    
-                    
                 }catch{
                     print(error) // shows error
                     print("Decoding failed")// local message

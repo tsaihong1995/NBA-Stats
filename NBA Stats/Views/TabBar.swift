@@ -35,7 +35,7 @@ struct TabBar: View {
                         .fill(Color.green)
                         .frame(width: equalWidth - 15, height: showCapsule ? 40 : 4)
                         .offset(x: getOffset() + 7)
-                        //.animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
+                        
                         
                     HStack(spacing: 0){
                         
@@ -55,10 +55,7 @@ struct TabBar: View {
                                     }
                                 }
                         }
-                        
                     }
-                    
-                    
                 })
                 .frame(maxWidth: .infinity,maxHeight: 30, alignment: .center)
                 

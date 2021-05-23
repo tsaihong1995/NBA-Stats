@@ -31,11 +31,11 @@ struct UserHomeView: View {
                 } else {
                     List(teamListVM.faviores, id: \.id) { team in
                         NavigationLink(destination:
-                                        TestContentView()
-                                        .navigationBarTitle(Text("Current Name"), displayMode: .inline)
+                                        TeamRecordDetails(teamVM: team)
+                                        .navigationBarTitle(Text("\(team.team.name)"), displayMode: .inline)
                         ) {
                             TeamCardView(teamVM: team)
-                        }
+                        }.buttonStyle(PlainButtonStyle())
                     }
                     .listStyle(InsetListStyle())
                 }

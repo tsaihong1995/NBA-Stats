@@ -23,11 +23,41 @@
 		2B8C308B2650C0E200C2CC0F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C30892650C0E200C2CC0F /* TabBar.swift */; };
 		2B8C308C2650C0E200C2CC0F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C308A2650C0E200C2CC0F /* SwiftUIView.swift */; };
 		2B8C308E265131DC00C2CC0F /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C308D265131DC00C2CC0F /* extension.swift */; };
-		2B8C3093265141F500C2CC0F /* team_seasonal_stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C308F265141F500C2CC0F /* team_seasonal_stats.json */; };
+		2B8C3093265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C308F265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json */; };
 		2B8C3094265141F500C2CC0F /* team_roster.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C3090265141F500C2CC0F /* team_roster.json */; };
 		2B8C3095265141F500C2CC0F /* data-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C3091265141F500C2CC0F /* data-2.json */; };
 		2B8C3096265141F500C2CC0F /* team_standing.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C3092265141F500C2CC0F /* team_standing.json */; };
 		2BDBC9DF2659CCCA003FF773 /* TeamSeasonalStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBC9DE2659CCCA003FF773 /* TeamSeasonalStats.swift */; };
+		2BDBC9E12659ED20003FF773 /* TeamRecordDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDBC9E02659ED20003FF773 /* TeamRecordDetails.swift */; };
+		2BDBCA02265AE03F003FF773 /* team_seasonal_stats_583ec9d6-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9E4265AE03E003FF773 /* team_seasonal_stats_583ec9d6-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA03265AE03F003FF773 /* team_seasonal_stats_583ec70e-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9E5265AE03E003FF773 /* team_seasonal_stats_583ec70e-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA04265AE03F003FF773 /* team_seasonal_stats_583ec87d-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9E6265AE03E003FF773 /* team_seasonal_stats_583ec87d-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA05265AE03F003FF773 /* team_seasonal_stats_583ec97e-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9E7265AE03E003FF773 /* team_seasonal_stats_583ec97e-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA06265AE03F003FF773 /* team_seasonal_stats_583ec773-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9E8265AE03E003FF773 /* team_seasonal_stats_583ec773-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA07265AE03F003FF773 /* team_seasonal_stats_583ec825-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9E9265AE03E003FF773 /* team_seasonal_stats_583ec825-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA08265AE03F003FF773 /* team_seasonal_stats_583ec928-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9EA265AE03E003FF773 /* team_seasonal_stats_583ec928-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA09265AE03F003FF773 /* team_seasonal_stats_583eca2f-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9EB265AE03E003FF773 /* team_seasonal_stats_583eca2f-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA0A265AE03F003FF773 /* team_seasonal_stats_583eca88-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9EC265AE03E003FF773 /* team_seasonal_stats_583eca88-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA0B265AE03F003FF773 /* team_seasonal_stats_583ec7cd-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9ED265AE03E003FF773 /* team_seasonal_stats_583ec7cd-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA0C265AE03F003FF773 /* team_seasonal_stats_583ec8d4-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9EE265AE03E003FF773 /* team_seasonal_stats_583ec8d4-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA0D265AE03F003FF773 /* team_seasonal_stats_583ec5fd-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9EF265AE03E003FF773 /* team_seasonal_stats_583ec5fd-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA0E265AE03F003FF773 /* team_seasonal_stats_583ecae2-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F0265AE03E003FF773 /* team_seasonal_stats_583ecae2-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA0F265AE03F003FF773 /* team_seasonal_stats_583ecb3a-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F1265AE03E003FF773 /* team_seasonal_stats_583ecb3a-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA10265AE03F003FF773 /* team_seasonal_stats_583ecb8f-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F2265AE03E003FF773 /* team_seasonal_stats_583ecb8f-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA11265AE03F003FF773 /* team_seasonal_stats_583ecc9a-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F3265AE03E003FF773 /* team_seasonal_stats_583ecc9a-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA12265AE03F003FF773 /* team_seasonal_stats_583eccfa-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F4265AE03E003FF773 /* team_seasonal_stats_583eccfa-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA13265AE03F003FF773 /* team_seasonal_stats_583ecd4f-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F5265AE03E003FF773 /* team_seasonal_stats_583ecd4f-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA14265AE03F003FF773 /* team_seasonal_stats_583ecda6-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F6265AE03E003FF773 /* team_seasonal_stats_583ecda6-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA15265AE03F003FF773 /* team_seasonal_stats_583ecdfb-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F7265AE03E003FF773 /* team_seasonal_stats_583ecdfb-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA17265AE03F003FF773 /* team_seasonal_stats_583ecea6-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9F9265AE03E003FF773 /* team_seasonal_stats_583ecea6-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA18265AE03F003FF773 /* team_seasonal_stats_583ecefd-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9FA265AE03E003FF773 /* team_seasonal_stats_583ecefd-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA19265AE03F003FF773 /* team_seasonal_stats_583ecf50-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9FB265AE03F003FF773 /* team_seasonal_stats_583ecf50-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA1A265AE03F003FF773 /* team_seasonal_stats_583ecfa8-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9FC265AE03F003FF773 /* team_seasonal_stats_583ecfa8-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA1B265AE03F003FF773 /* team_seasonal_stats_583ecfff-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9FD265AE03F003FF773 /* team_seasonal_stats_583ecfff-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA1C265AE03F003FF773 /* team_seasonal_stats_583ed0ac-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9FE265AE03F003FF773 /* team_seasonal_stats_583ed0ac-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA1D265AE03F003FF773 /* team_seasonal_stats_583ed056-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBC9FF265AE03F003FF773 /* team_seasonal_stats_583ed056-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA1E265AE03F003FF773 /* team_seasonal_stats_583ed102-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBCA00265AE03F003FF773 /* team_seasonal_stats_583ed102-fb46-11e1-82cb-f4ce4684ea4c.json */; };
+		2BDBCA1F265AE03F003FF773 /* team_seasonal_stats_583ed157-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BDBCA01265AE03F003FF773 /* team_seasonal_stats_583ed157-fb46-11e1-82cb-f4ce4684ea4c.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,11 +79,41 @@
 		2B8C30892650C0E200C2CC0F /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		2B8C308A2650C0E200C2CC0F /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		2B8C308D265131DC00C2CC0F /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
-		2B8C308F265141F500C2CC0F /* team_seasonal_stats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team_seasonal_stats.json; sourceTree = "<group>"; };
+		2B8C308F265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
 		2B8C3090265141F500C2CC0F /* team_roster.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team_roster.json; sourceTree = "<group>"; };
 		2B8C3091265141F500C2CC0F /* data-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "data-2.json"; sourceTree = "<group>"; };
 		2B8C3092265141F500C2CC0F /* team_standing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team_standing.json; sourceTree = "<group>"; };
 		2BDBC9DE2659CCCA003FF773 /* TeamSeasonalStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSeasonalStats.swift; sourceTree = "<group>"; };
+		2BDBC9E02659ED20003FF773 /* TeamRecordDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRecordDetails.swift; sourceTree = "<group>"; };
+		2BDBC9E4265AE03E003FF773 /* team_seasonal_stats_583ec9d6-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec9d6-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9E5265AE03E003FF773 /* team_seasonal_stats_583ec70e-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec70e-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9E6265AE03E003FF773 /* team_seasonal_stats_583ec87d-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec87d-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9E7265AE03E003FF773 /* team_seasonal_stats_583ec97e-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec97e-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9E8265AE03E003FF773 /* team_seasonal_stats_583ec773-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec773-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9E9265AE03E003FF773 /* team_seasonal_stats_583ec825-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec825-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9EA265AE03E003FF773 /* team_seasonal_stats_583ec928-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec928-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9EB265AE03E003FF773 /* team_seasonal_stats_583eca2f-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583eca2f-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9EC265AE03E003FF773 /* team_seasonal_stats_583eca88-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583eca88-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9ED265AE03E003FF773 /* team_seasonal_stats_583ec7cd-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec7cd-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9EE265AE03E003FF773 /* team_seasonal_stats_583ec8d4-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec8d4-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9EF265AE03E003FF773 /* team_seasonal_stats_583ec5fd-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ec5fd-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F0265AE03E003FF773 /* team_seasonal_stats_583ecae2-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecae2-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F1265AE03E003FF773 /* team_seasonal_stats_583ecb3a-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecb3a-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F2265AE03E003FF773 /* team_seasonal_stats_583ecb8f-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecb8f-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F3265AE03E003FF773 /* team_seasonal_stats_583ecc9a-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecc9a-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F4265AE03E003FF773 /* team_seasonal_stats_583eccfa-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583eccfa-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F5265AE03E003FF773 /* team_seasonal_stats_583ecd4f-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecd4f-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F6265AE03E003FF773 /* team_seasonal_stats_583ecda6-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecda6-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F7265AE03E003FF773 /* team_seasonal_stats_583ecdfb-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecdfb-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9F9265AE03E003FF773 /* team_seasonal_stats_583ecea6-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecea6-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9FA265AE03E003FF773 /* team_seasonal_stats_583ecefd-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecefd-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9FB265AE03F003FF773 /* team_seasonal_stats_583ecf50-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecf50-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9FC265AE03F003FF773 /* team_seasonal_stats_583ecfa8-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecfa8-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9FD265AE03F003FF773 /* team_seasonal_stats_583ecfff-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ecfff-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9FE265AE03F003FF773 /* team_seasonal_stats_583ed0ac-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ed0ac-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBC9FF265AE03F003FF773 /* team_seasonal_stats_583ed056-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ed056-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBCA00265AE03F003FF773 /* team_seasonal_stats_583ed102-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ed102-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
+		2BDBCA01265AE03F003FF773 /* team_seasonal_stats_583ed157-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ed157-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +148,8 @@
 			children = (
 				2B8C3091265141F500C2CC0F /* data-2.json */,
 				2B8C3090265141F500C2CC0F /* team_roster.json */,
-				2B8C308F265141F500C2CC0F /* team_seasonal_stats.json */,
 				2B8C3092265141F500C2CC0F /* team_standing.json */,
+				2BDBC9E2265AA70E003FF773 /* jsonFile */,
 				2B297522264C21520091FBDD /* Constants.swift */,
 				2B297521264C212D0091FBDD /* Models */,
 				2B297520264C211B0091FBDD /* ViewModels */,
@@ -115,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				2B8C308A2650C0E200C2CC0F /* SwiftUIView.swift */,
+				2BDBC9E02659ED20003FF773 /* TeamRecordDetails.swift */,
 				2B8C30892650C0E200C2CC0F /* TabBar.swift */,
 				2B59DCAA264ED241009B088C /* Components */,
 				2B29752C264C4ADF0091FBDD /* SelectTeamsView.swift */,
@@ -150,6 +211,51 @@
 				2B297512264C1B9B0091FBDD /* TeamCardView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2BDBC9E2265AA70E003FF773 /* jsonFile */ = {
+			isa = PBXGroup;
+			children = (
+				2BDBC9E3265AE02B003FF773 /* TeamSeasonalStats */,
+				2B8C308F265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json */,
+			);
+			path = jsonFile;
+			sourceTree = "<group>";
+		};
+		2BDBC9E3265AE02B003FF773 /* TeamSeasonalStats */ = {
+			isa = PBXGroup;
+			children = (
+				2BDBC9EF265AE03E003FF773 /* team_seasonal_stats_583ec5fd-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9ED265AE03E003FF773 /* team_seasonal_stats_583ec7cd-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9EE265AE03E003FF773 /* team_seasonal_stats_583ec8d4-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9E4265AE03E003FF773 /* team_seasonal_stats_583ec9d6-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9E5265AE03E003FF773 /* team_seasonal_stats_583ec70e-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9E6265AE03E003FF773 /* team_seasonal_stats_583ec87d-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9E7265AE03E003FF773 /* team_seasonal_stats_583ec97e-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9E8265AE03E003FF773 /* team_seasonal_stats_583ec773-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9E9265AE03E003FF773 /* team_seasonal_stats_583ec825-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9EA265AE03E003FF773 /* team_seasonal_stats_583ec928-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9EB265AE03E003FF773 /* team_seasonal_stats_583eca2f-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9EC265AE03E003FF773 /* team_seasonal_stats_583eca88-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F0265AE03E003FF773 /* team_seasonal_stats_583ecae2-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F1265AE03E003FF773 /* team_seasonal_stats_583ecb3a-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F2265AE03E003FF773 /* team_seasonal_stats_583ecb8f-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F3265AE03E003FF773 /* team_seasonal_stats_583ecc9a-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F4265AE03E003FF773 /* team_seasonal_stats_583eccfa-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F5265AE03E003FF773 /* team_seasonal_stats_583ecd4f-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F6265AE03E003FF773 /* team_seasonal_stats_583ecda6-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F7265AE03E003FF773 /* team_seasonal_stats_583ecdfb-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9F9265AE03E003FF773 /* team_seasonal_stats_583ecea6-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9FA265AE03E003FF773 /* team_seasonal_stats_583ecefd-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9FB265AE03F003FF773 /* team_seasonal_stats_583ecf50-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9FC265AE03F003FF773 /* team_seasonal_stats_583ecfa8-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9FD265AE03F003FF773 /* team_seasonal_stats_583ecfff-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9FE265AE03F003FF773 /* team_seasonal_stats_583ed0ac-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBC9FF265AE03F003FF773 /* team_seasonal_stats_583ed056-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBCA00265AE03F003FF773 /* team_seasonal_stats_583ed102-fb46-11e1-82cb-f4ce4684ea4c.json */,
+				2BDBCA01265AE03F003FF773 /* team_seasonal_stats_583ed157-fb46-11e1-82cb-f4ce4684ea4c.json */,
+			);
+			path = TeamSeasonalStats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,12 +315,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8C3093265141F500C2CC0F /* team_seasonal_stats.json in Resources */,
+				2BDBCA04265AE03F003FF773 /* team_seasonal_stats_583ec87d-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA02265AE03F003FF773 /* team_seasonal_stats_583ec9d6-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA1A265AE03F003FF773 /* team_seasonal_stats_583ecfa8-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2B8C3093265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
 				2B8C3094265141F500C2CC0F /* team_roster.json in Resources */,
+				2BDBCA17265AE03F003FF773 /* team_seasonal_stats_583ecea6-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA1F265AE03F003FF773 /* team_seasonal_stats_583ed157-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA0C265AE03F003FF773 /* team_seasonal_stats_583ec8d4-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA10265AE03F003FF773 /* team_seasonal_stats_583ecb8f-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
 				2B8C3096265141F500C2CC0F /* team_standing.json in Resources */,
+				2BDBCA14265AE03F003FF773 /* team_seasonal_stats_583ecda6-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA1B265AE03F003FF773 /* team_seasonal_stats_583ecfff-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA03265AE03F003FF773 /* team_seasonal_stats_583ec70e-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA12265AE03F003FF773 /* team_seasonal_stats_583eccfa-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA0B265AE03F003FF773 /* team_seasonal_stats_583ec7cd-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
 				2B8C3095265141F500C2CC0F /* data-2.json in Resources */,
+				2BDBCA0D265AE03F003FF773 /* team_seasonal_stats_583ec5fd-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA07265AE03F003FF773 /* team_seasonal_stats_583ec825-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA1D265AE03F003FF773 /* team_seasonal_stats_583ed056-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA06265AE03F003FF773 /* team_seasonal_stats_583ec773-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA13265AE03F003FF773 /* team_seasonal_stats_583ecd4f-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA11265AE03F003FF773 /* team_seasonal_stats_583ecc9a-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA1E265AE03F003FF773 /* team_seasonal_stats_583ed102-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA0E265AE03F003FF773 /* team_seasonal_stats_583ecae2-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA09265AE03F003FF773 /* team_seasonal_stats_583eca2f-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
 				2B297518264C1B9C0091FBDD /* Preview Assets.xcassets in Resources */,
+				2BDBCA08265AE03F003FF773 /* team_seasonal_stats_583ec928-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
 				2B297515264C1B9C0091FBDD /* Assets.xcassets in Resources */,
+				2BDBCA15265AE03F003FF773 /* team_seasonal_stats_583ecdfb-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA19265AE03F003FF773 /* team_seasonal_stats_583ecf50-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA05265AE03F003FF773 /* team_seasonal_stats_583ec97e-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA1C265AE03F003FF773 /* team_seasonal_stats_583ed0ac-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA0F265AE03F003FF773 /* team_seasonal_stats_583ecb3a-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA18265AE03F003FF773 /* team_seasonal_stats_583ecefd-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
+				2BDBCA0A265AE03F003FF773 /* team_seasonal_stats_583eca88-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +370,7 @@
 				2B29752D264C4ADF0091FBDD /* SelectTeamsView.swift in Sources */,
 				2BDBC9DF2659CCCA003FF773 /* TeamSeasonalStats.swift in Sources */,
 				2B8C308C2650C0E200C2CC0F /* SwiftUIView.swift in Sources */,
+				2BDBC9E12659ED20003FF773 /* TeamRecordDetails.swift in Sources */,
 				2B59DCA9264ED204009B088C /* TabViewHome.swift in Sources */,
 				2B8C308B2650C0E200C2CC0F /* TabBar.swift in Sources */,
 				2B297511264C1B9B0091FBDD /* NBA_StatsApp.swift in Sources */,

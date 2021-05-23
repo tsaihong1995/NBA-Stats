@@ -69,6 +69,7 @@ public struct Team: Codable {
     let streak: Streak
     let calcRank: CalcRank
     let records: [Record]
+    
 
     enum CodingKeys: String, CodingKey {
         case id, name, market, wins, losses

@@ -30,30 +30,36 @@ class TeamListViewModel: ObservableObject{
         apiService.getApiResponse(sourceName: "team_standing") { (result: Result<ApiResponse, APIService.APIError>) in
             switch result {
             case .success(let apiRes):
+                DispatchQueue.main.async {
                     
-                self.isLoading = false
-                self.teams.removeAll()
-                
+                    self.isLoading = false
+                    self.teams.removeAll()
+                    
                     for conference in apiRes.conferences {
                         if let divisions = conference.divisions {
                             for division in divisions{
                                 if let teams = division.teams {
                                     for team in teams {
-                                        self.teams.append(TeamViewModel(team: team))
+                                        
+                                        self.teams.append(TeamViewModel(team: team, conference: conference))
                                         print("-----------")
+                                        print("Division: \(conference.alias.prefix(4))")
                                         print("ID: \(team.id)")
                                         print("Name: \(team.name)")
                                         print("Wins: \(team.wins)")
                                         print("Losses: \(team.losses)")
                                         print("Win percentage: \(team.winPct)")
                                         print("Streak: \(team.streak.kind) \(team.streak.length)")
-
+                                        
                                     }
                                 }
                             }
                         }
-
+                        
                     }
+                }
+                
+                
                 
             case .failure(let apiError):
                 switch apiError {
@@ -63,7 +69,7 @@ class TeamListViewModel: ObservableObject{
                     print(errorString)
                 }
             }
-
+            
         }
     }
     
