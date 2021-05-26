@@ -30,12 +30,17 @@ struct UserHomeView: View {
                     
                 } else {
                     List(teamListVM.faviores, id: \.id) { team in
-                        NavigationLink(destination:
-                                        TeamRecordDetails(teamVM: team)
-                                        .navigationBarTitle(Text("\(team.team.name)"), displayMode: .inline)
-                        ) {
+                        
+                        ZStack {
                             TeamCardView(teamVM: team)
-                        }.buttonStyle(PlainButtonStyle())
+                            NavigationLink(destination:
+                                            PaginationViewCollection(teamVM: team)
+                                            .navigationBarTitle(Text("\(team.team.name)"), displayMode: .inline)
+                            ) {
+                              EmptyView()
+                            }.buttonStyle(PlainButtonStyle())
+                        }
+                        
                     }
                     .listStyle(InsetListStyle())
                 }

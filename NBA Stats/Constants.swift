@@ -33,3 +33,5 @@ let TeamName = [
 let myTeam = Team(id: "583ece50-fb46-11e1-82cb-f4ce4684ea4c", name: "Jazz", market: "Utah", wins: 51, losses: 20, winPct: 0.718, pointsFor: 116.35, pointsAgainst: 107.28, pointDiff: 9.07, srID: "sr:team:3434", reference: "1610612762", gamesBehind: GamesBehind(league: 0.0, conference: 0.0, division: 0.0), streak: Streak(kind: Kind.win, length: 1), calcRank: CalcRank(divRank: 1, confRank: 1, confTiebreak: "1"), records: [Record(recordType: RecordType.last10, wins: 7, losses: 3 , winPct: 0.7)])
 
 let myConference = Conference(id: "Default", name: "East", alias: "EAST", divisions: nil)
+
+let testTeamVM = TeamViewModel(team: myTeam, teamListVM: TeamListViewModel())

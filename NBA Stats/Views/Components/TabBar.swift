@@ -7,20 +7,18 @@
 
 import SwiftUI
 
-var tabs = ["Home","Search","Account"]
+var tabs = ["Team","Player"]
 
 struct TabBar: View {
     
     @Binding var currentIndex: Int
-    @Binding var offset: CGFloat
-    @Binding var showCapsule: Bool
+    @State var offset: CGFloat = 0
     @State var width : CGFloat = 0
     
     var body: some View {
         
         GeometryReader{proxy -> AnyView in
             
-            // Equal Width...
             let equalWidth = proxy.frame(in: .global).width / CGFloat(tabs.count)
             
             DispatchQueue.main.async {
@@ -33,24 +31,19 @@ struct TabBar: View {
                     
                     Capsule()
                         .fill(Color.green)
-                        .frame(width: equalWidth - 15, height: showCapsule ? 40 : 4)
-                        .offset(x: getOffset() + 7)
-                        
-                        
+                        .frame(width: equalWidth - 15, height: 4)
+                        .offset(x: getOffset() + 10)
+
                     HStack(spacing: 0){
-                        
                         ForEach(tabs.indices,id: \.self){index in
-                            
                             Text(tabs[index])
-                                .fontWeight(.bold)
-                                .foregroundColor(showCapsule ? (getIndexFromOffset() == CGFloat(index) ? .black : .white) : .white)
+                                .font(.caption)
+                                .fontWeight(.medium)
                                 .frame(width: equalWidth, height: 40)
                                 .contentShape(Rectangle())
                                 .onTapGesture {
                                     self.currentIndex = index
-                                    // Setting Offset....
                                     withAnimation{
-                                        
                                         offset = UIScreen.main.bounds.width * CGFloat(index)
                                     }
                                 }
@@ -61,7 +54,7 @@ struct TabBar: View {
                 
             )
         }
-        .padding()
+        .padding(.horizontal)
         .frame(height: 40)
     }
     
@@ -69,16 +62,9 @@ struct TabBar: View {
     
     func getOffset()->CGFloat{
         
-        let progress = offset / UIScreen.main.bounds.width
+        _ = offset / UIScreen.main.bounds.width
         
-        return progress * width
-    }
-    
-    func getIndexFromOffset()->CGFloat{
-        
-        let indexFloat = offset / UIScreen.main.bounds.width
-        
-        return indexFloat.rounded(.toNearestOrAwayFromZero)
+        return CGFloat(currentIndex) * width
     }
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,8 +20,12 @@
 		2B59DCA9264ED204009B088C /* TabViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59DCA8264ED204009B088C /* TabViewHome.swift */; };
 		2B59DCAC264ED2CD009B088C /* TeamListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59DCAB264ED2CD009B088C /* TeamListViewModel.swift */; };
 		2B59DCAE264ED335009B088C /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59DCAD264ED335009B088C /* TeamViewModel.swift */; };
-		2B8C308B2650C0E200C2CC0F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C30892650C0E200C2CC0F /* TabBar.swift */; };
-		2B8C308C2650C0E200C2CC0F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C308A2650C0E200C2CC0F /* SwiftUIView.swift */; };
+		2B8AFC29265B43D100881E18 /* MyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC28265B43D100881E18 /* MyProgressView.swift */; };
+		2B8AFC2C265C121500881E18 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC2B265C121500881E18 /* Extension.swift */; };
+		2B8AFC34265DC52D00881E18 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 2B8AFC33265DC52D00881E18 /* SwiftUIX */; };
+		2B8AFC36265DC54B00881E18 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC35265DC54B00881E18 /* TabBar.swift */; };
+		2B8AFC38265DC5CF00881E18 /* PaginationViewCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC37265DC5CF00881E18 /* PaginationViewCollection.swift */; };
+		2B8AFC3A265F0E4900881E18 /* TeamPlayersDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC39265F0E4900881E18 /* TeamPlayersDetails.swift */; };
 		2B8C308E265131DC00C2CC0F /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C308D265131DC00C2CC0F /* extension.swift */; };
 		2B8C3093265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C308F265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json */; };
 		2B8C3094265141F500C2CC0F /* team_roster.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C3090265141F500C2CC0F /* team_roster.json */; };
@@ -76,8 +80,11 @@
 		2B59DCA8264ED204009B088C /* TabViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewHome.swift; sourceTree = "<group>"; };
 		2B59DCAB264ED2CD009B088C /* TeamListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListViewModel.swift; sourceTree = "<group>"; };
 		2B59DCAD264ED335009B088C /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
-		2B8C30892650C0E200C2CC0F /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		2B8C308A2650C0E200C2CC0F /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		2B8AFC28265B43D100881E18 /* MyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressView.swift; sourceTree = "<group>"; };
+		2B8AFC2B265C121500881E18 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2B8AFC35265DC54B00881E18 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		2B8AFC37265DC5CF00881E18 /* PaginationViewCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewCollection.swift; sourceTree = "<group>"; };
+		2B8AFC39265F0E4900881E18 /* TeamPlayersDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlayersDetails.swift; sourceTree = "<group>"; };
 		2B8C308D265131DC00C2CC0F /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		2B8C308F265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
 		2B8C3090265141F500C2CC0F /* team_roster.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team_roster.json; sourceTree = "<group>"; };
@@ -121,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8AFC34265DC52D00881E18 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +154,7 @@
 		2B29750F264C1B9B0091FBDD /* NBA Stats */ = {
 			isa = PBXGroup;
 			children = (
+				2B8AFC2A265BF9C100881E18 /* Extension */,
 				2B8C3091265141F500C2CC0F /* data-2.json */,
 				2B8C3090265141F500C2CC0F /* team_roster.json */,
 				2B8C3092265141F500C2CC0F /* team_standing.json */,
@@ -174,12 +183,11 @@
 		2B29751F264C21100091FBDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2B8C308A2650C0E200C2CC0F /* SwiftUIView.swift */,
-				2BDBC9E02659ED20003FF773 /* TeamRecordDetails.swift */,
-				2B8C30892650C0E200C2CC0F /* TabBar.swift */,
 				2B59DCAA264ED241009B088C /* Components */,
 				2B29752C264C4ADF0091FBDD /* SelectTeamsView.swift */,
 				2B29752E264C58810091FBDD /* SearchBar.swift */,
+				2BDBC9E02659ED20003FF773 /* TeamRecordDetails.swift */,
+				2B8AFC39265F0E4900881E18 /* TeamPlayersDetails.swift */,
 				2B297524264C3C0D0091FBDD /* UserHomeView.swift */,
 				2B59DCA8264ED204009B088C /* TabViewHome.swift */,
 			);
@@ -208,9 +216,20 @@
 		2B59DCAA264ED241009B088C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2B8AFC37265DC5CF00881E18 /* PaginationViewCollection.swift */,
+				2B8AFC35265DC54B00881E18 /* TabBar.swift */,
+				2B8AFC28265B43D100881E18 /* MyProgressView.swift */,
 				2B297512264C1B9B0091FBDD /* TeamCardView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2B8AFC2A265BF9C100881E18 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B8AFC2B265C121500881E18 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		2BDBC9E2265AA70E003FF773 /* jsonFile */ = {
@@ -274,6 +293,9 @@
 			dependencies = (
 			);
 			name = "NBA Stats";
+			packageProductDependencies = (
+				2B8AFC33265DC52D00881E18 /* SwiftUIX */,
+			);
 			productName = "NBA Stats";
 			productReference = 2B29750D264C1B9B0091FBDD /* NBA Stats.app */;
 			productType = "com.apple.product-type.application";
@@ -301,6 +323,9 @@
 				Base,
 			);
 			mainGroup = 2B297504264C1B9B0091FBDD;
+			packageReferences = (
+				2B8AFC32265DC52D00881E18 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 2B29750E264C1B9B0091FBDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,17 +387,20 @@
 			files = (
 				2B297525264C3C0D0091FBDD /* UserHomeView.swift in Sources */,
 				2B297527264C45B40091FBDD /* APIService.swift in Sources */,
+				2B8AFC36265DC54B00881E18 /* TabBar.swift in Sources */,
+				2B8AFC3A265F0E4900881E18 /* TeamPlayersDetails.swift in Sources */,
 				2B8C308E265131DC00C2CC0F /* extension.swift in Sources */,
 				2B29752B264C46AA0091FBDD /* ApiResponse.swift in Sources */,
 				2B297513264C1B9B0091FBDD /* TeamCardView.swift in Sources */,
+				2B8AFC38265DC5CF00881E18 /* PaginationViewCollection.swift in Sources */,
 				2B59DCAE264ED335009B088C /* TeamViewModel.swift in Sources */,
+				2B8AFC29265B43D100881E18 /* MyProgressView.swift in Sources */,
 				2B29752F264C58810091FBDD /* SearchBar.swift in Sources */,
 				2B29752D264C4ADF0091FBDD /* SelectTeamsView.swift in Sources */,
+				2B8AFC2C265C121500881E18 /* Extension.swift in Sources */,
 				2BDBC9DF2659CCCA003FF773 /* TeamSeasonalStats.swift in Sources */,
-				2B8C308C2650C0E200C2CC0F /* SwiftUIView.swift in Sources */,
 				2BDBC9E12659ED20003FF773 /* TeamRecordDetails.swift in Sources */,
 				2B59DCA9264ED204009B088C /* TabViewHome.swift in Sources */,
-				2B8C308B2650C0E200C2CC0F /* TabBar.swift in Sources */,
 				2B297511264C1B9B0091FBDD /* NBA_StatsApp.swift in Sources */,
 				2B59DCAC264ED2CD009B088C /* TeamListViewModel.swift in Sources */,
 				2B297523264C21520091FBDD /* Constants.swift in Sources */,
@@ -564,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B8AFC32265DC52D00881E18 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B8AFC33265DC52D00881E18 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B8AFC32265DC52D00881E18 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B297505264C1B9B0091FBDD /* Project object */;
 }

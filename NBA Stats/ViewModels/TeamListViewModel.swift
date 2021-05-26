@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+
 class TeamListViewModel: ObservableObject{
     
     struct AppError: Identifiable {
@@ -17,12 +19,13 @@ class TeamListViewModel: ObservableObject{
     @Published var teams: [TeamViewModel] = []
     @Published var isLoading: Bool = false
     @Published var faviores: [TeamViewModel] = []
+    @Published var teamsStats: [TeamSeasonalStats] = []
     var appError: AppError? = nil
     
     init() {
         getTeamStanding()
     }
-    
+
     func getTeamStanding() {
         
         let apiService = APIService.shared
@@ -40,17 +43,7 @@ class TeamListViewModel: ObservableObject{
                             for division in divisions{
                                 if let teams = division.teams {
                                     for team in teams {
-                                        
-                                        self.teams.append(TeamViewModel(team: team, conference: conference))
-                                        print("-----------")
-                                        print("Division: \(conference.alias.prefix(4))")
-                                        print("ID: \(team.id)")
-                                        print("Name: \(team.name)")
-                                        print("Wins: \(team.wins)")
-                                        print("Losses: \(team.losses)")
-                                        print("Win percentage: \(team.winPct)")
-                                        print("Streak: \(team.streak.kind) \(team.streak.length)")
-                                        
+                                        self.teams.append(TeamViewModel(team: team, conference: conference, teamListVM: self))
                                     }
                                 }
                             }
@@ -71,6 +64,55 @@ class TeamListViewModel: ObservableObject{
             }
             
         }
+    }
+    
+
+
+    
+    func fieldGoalPctMax() -> Double{
+        return teamsStats.map {$0.ownRecord.total.fieldGoalsPct}.max()! * 100
+    }
+    func threePTFieldGoalPctMax() -> Double{
+        return teamsStats.map {$0.ownRecord.total.threePointsPct}.max()! * 100
+    }
+    func threePTMadeMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.threePointsMade}.max()!
+    }
+    func avgPointMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.points}.max()!
+    }
+    func freeThrowsMadeMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.freeThrowsMade}.max()!
+    }
+    func freeThrowsPctMax() -> Double{
+        return teamsStats.map {$0.ownRecord.total.freeThrowsPct}.max()! * 100
+    }
+    func benchPointsMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.benchPoints}.max()!
+    }
+    func reboundsMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.rebounds}.max()!
+    }
+    func offReboundsMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.offRebounds}.max()!
+    }
+    func defReboundsMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.defRebounds}.max()!
+    }
+    func assistsMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.assists}.max()!
+    }
+    func stealsMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.steals}.max()!
+    }
+    func blocksMax() -> Double{
+        return teamsStats.map {$0.ownRecord.average.blocks}.max()!
+    }
+    func turnoverMin() -> Double{
+        return teamsStats.map {$0.ownRecord.average.turnovers}.min()!
+    }
+    func trueShootingPct() -> Double{
+        return teamsStats.map {$0.ownRecord.total.trueShootingPct}.max()! * 100
     }
     
 }
