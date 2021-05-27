@@ -9,8 +9,6 @@ import Foundation
 
 class TeamViewModel: ObservableObject {
     
-    
-    
     struct AppError: Identifiable {
         let id = UUID().uuidString
         let errorString: String

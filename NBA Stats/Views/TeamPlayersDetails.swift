@@ -7,14 +7,41 @@
 
 import SwiftUI
 
-struct TeamPlayersDetails: View {
+struct TeamPlayersListDetails: View {
+    
+    @ObservedObject var teamVM: TeamViewModel
+    @ObservedObject var teamPlayersVM: TeamPlayersViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        if let players = teamPlayersVM.teamPlayers {
+            NavigationView {
+                List {
+                    Section(header: Text("Player List").font(.footnote)) {
+                        ForEach(players, id: \.id) { player in
+                            
+                            NavigationLink(destination: Text("\(player.fullName) Detail")) {
+                                PlayerListRow(player: player)
+                            }
+                            
+                            
+                            
+                        }
+                    }
+                }
+                .listStyle(GroupedListStyle())
+                .navigationTitle("Book List") // Your back button text
+                .navigationBarHidden(true)
+            }
+            
+        }
+        Text("123")
+        
     }
 }
 
 struct TeamPlayersDetails_Previews: PreviewProvider {
     static var previews: some View {
-        TeamPlayersDetails()
+        TeamPlayersListDetails(teamVM: testTeamVM, teamPlayersVM: myTeamPlayer)
     }
 }

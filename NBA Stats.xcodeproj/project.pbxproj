@@ -26,6 +26,8 @@
 		2B8AFC36265DC54B00881E18 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC35265DC54B00881E18 /* TabBar.swift */; };
 		2B8AFC38265DC5CF00881E18 /* PaginationViewCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC37265DC5CF00881E18 /* PaginationViewCollection.swift */; };
 		2B8AFC3A265F0E4900881E18 /* TeamPlayersDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC39265F0E4900881E18 /* TeamPlayersDetails.swift */; };
+		2B8AFC3C265F0F3C00881E18 /* TeamPlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC3B265F0F3C00881E18 /* TeamPlayersViewModel.swift */; };
+		2B8AFC3E265F3B4F00881E18 /* PlayerListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8AFC3D265F3B4F00881E18 /* PlayerListRow.swift */; };
 		2B8C308E265131DC00C2CC0F /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C308D265131DC00C2CC0F /* extension.swift */; };
 		2B8C3093265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C308F265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json */; };
 		2B8C3094265141F500C2CC0F /* team_roster.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C3090265141F500C2CC0F /* team_roster.json */; };
@@ -85,6 +87,8 @@
 		2B8AFC35265DC54B00881E18 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		2B8AFC37265DC5CF00881E18 /* PaginationViewCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewCollection.swift; sourceTree = "<group>"; };
 		2B8AFC39265F0E4900881E18 /* TeamPlayersDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlayersDetails.swift; sourceTree = "<group>"; };
+		2B8AFC3B265F0F3C00881E18 /* TeamPlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlayersViewModel.swift; sourceTree = "<group>"; };
+		2B8AFC3D265F3B4F00881E18 /* PlayerListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListRow.swift; sourceTree = "<group>"; };
 		2B8C308D265131DC00C2CC0F /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		2B8C308F265141F500C2CC0F /* team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team_seasonal_stats_583ece50-fb46-11e1-82cb-f4ce4684ea4c.json"; sourceTree = "<group>"; };
 		2B8C3090265141F500C2CC0F /* team_roster.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team_roster.json; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 			children = (
 				2B59DCAB264ED2CD009B088C /* TeamListViewModel.swift */,
 				2B59DCAD264ED335009B088C /* TeamViewModel.swift */,
+				2B8AFC3B265F0F3C00881E18 /* TeamPlayersViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				2B8AFC37265DC5CF00881E18 /* PaginationViewCollection.swift */,
 				2B8AFC35265DC54B00881E18 /* TabBar.swift */,
 				2B8AFC28265B43D100881E18 /* MyProgressView.swift */,
+				2B8AFC3D265F3B4F00881E18 /* PlayerListRow.swift */,
 				2B297512264C1B9B0091FBDD /* TeamCardView.swift */,
 			);
 			path = Components;
@@ -388,6 +394,7 @@
 				2B297525264C3C0D0091FBDD /* UserHomeView.swift in Sources */,
 				2B297527264C45B40091FBDD /* APIService.swift in Sources */,
 				2B8AFC36265DC54B00881E18 /* TabBar.swift in Sources */,
+				2B8AFC3E265F3B4F00881E18 /* PlayerListRow.swift in Sources */,
 				2B8AFC3A265F0E4900881E18 /* TeamPlayersDetails.swift in Sources */,
 				2B8C308E265131DC00C2CC0F /* extension.swift in Sources */,
 				2B29752B264C46AA0091FBDD /* ApiResponse.swift in Sources */,
@@ -401,6 +408,7 @@
 				2BDBC9DF2659CCCA003FF773 /* TeamSeasonalStats.swift in Sources */,
 				2BDBC9E12659ED20003FF773 /* TeamRecordDetails.swift in Sources */,
 				2B59DCA9264ED204009B088C /* TabViewHome.swift in Sources */,
+				2B8AFC3C265F0F3C00881E18 /* TeamPlayersViewModel.swift in Sources */,
 				2B297511264C1B9B0091FBDD /* NBA_StatsApp.swift in Sources */,
 				2B59DCAC264ED2CD009B088C /* TeamListViewModel.swift in Sources */,
 				2B297523264C21520091FBDD /* Constants.swift in Sources */,

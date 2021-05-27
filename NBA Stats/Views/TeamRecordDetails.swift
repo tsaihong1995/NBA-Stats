@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TeamRecordDetails: View {
     
-    @State var teamVM: TeamViewModel
+    @ObservedObject var teamVM: TeamViewModel
     var body: some View {
         VStack {
             ScrollView{
@@ -33,7 +33,7 @@ struct TeamRecordDetails: View {
                             
                             MyProgressView(teamVM: teamVM, titleName: "Deffensive Rebounds", progress: teamStat.ownRecord.average.defRebounds, maxProgressValue: teamVM.teamListVM!.defReboundsMax())
                             MyProgressView(teamVM: teamVM, titleName: "Assists", progress: teamStat.ownRecord.average.assists, maxProgressValue: teamVM.teamListVM!.assistsMax())
-                            MyProgressView(teamVM: teamVM, titleName: "Steals", progress: teamStat.ownRecord.average.offRebounds, maxProgressValue: teamVM.teamListVM!.stealsMax())
+                            MyProgressView(teamVM: teamVM, titleName: "Steals", progress: teamStat.ownRecord.average.steals, maxProgressValue: teamVM.teamListVM!.stealsMax())
                             MyProgressView(teamVM: teamVM, titleName: "Blocks", progress: teamStat.ownRecord.average.blocks, maxProgressValue: teamVM.teamListVM!.blocksMax())
                             MyProgressView(teamVM: teamVM, titleName: "Turnover", progress: teamVM.teamListVM!.turnoverMin(), maxProgressValue: teamStat.ownRecord.average.turnovers)
                             MyProgressView(teamVM: teamVM, titleName: "True Shooting Percentage", progress: teamStat.ownRecord.total.trueShootingPct * 100, maxProgressValue: teamVM.teamListVM!.trueShootingPct())

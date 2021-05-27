@@ -11,32 +11,40 @@ import SwiftUIX
 
 struct PaginationViewCollection: View {
     
+    @ObservedObject var teamVM: TeamViewModel
+    @ObservedObject var teamPlayersVM: TeamPlayersViewModel
     
-    @State var teamVM: TeamViewModel
     @State private var currentPage = 0
     @State var barOffset: CGFloat = 0
     @State var showCapsule = false
     
     var body: some View {
-        VStack{
-            TeamCardView(teamVM: teamVM)
-                .padding(.top)
-            TabBar(currentIndex: $currentPage)
-            PaginationView(axis: .horizontal) {
-                TeamRecordDetails(teamVM: teamVM)
-                Text("2")
+        NavigationView{
+            VStack{
+                TeamCardView(teamVM: teamVM)
+                    .padding(.top)
+                TabBar(currentIndex: $currentPage)
+                PaginationView(axis: .horizontal) {
+                    TeamRecordDetails(teamVM: teamVM)
+                    TeamPlayersListDetails(teamVM: teamVM, teamPlayersVM: teamPlayersVM)
+                }
+                .currentPageIndex($currentPage)
+                //.overlay(                     ,alignment: .top)
             }
-            .currentPageIndex($currentPage)
-            //.overlay(                     ,alignment: .top)
         }
+        .navigationTitle("Book List")
+        //.navigationBarHidden(true)
+        
         
         
         
     }
 }
 
+
+
 struct PaginationViewCollection_Previews: PreviewProvider {
     static var previews: some View {
-        PaginationViewCollection(teamVM: testTeamVM)
+        PaginationViewCollection(teamVM: testTeamVM, teamPlayersVM: myTeamPlayer)
     }
 }
