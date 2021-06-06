@@ -19,20 +19,19 @@ struct PaginationViewCollection: View {
     @State var showCapsule = false
     
     var body: some View {
-        NavigationView{
-            VStack{
-                TeamCardView(teamVM: teamVM)
-                    .padding(.top)
-                TabBar(currentIndex: $currentPage)
-                PaginationView(axis: .horizontal) {
-                    TeamRecordDetails(teamVM: teamVM)
-                    TeamPlayersListDetails(teamVM: teamVM, teamPlayersVM: teamPlayersVM)
-                }
-                .currentPageIndex($currentPage)
-                //.overlay(                     ,alignment: .top)
+        
+        VStack{
+            TeamCardView(teamVM: teamVM)
+                .padding(.top)
+            TabBar(currentIndex: $currentPage)
+            PaginationView(axis: .horizontal) {
+                TeamRecordDetails(teamVM: teamVM)
+                TeamPlayersListDetails(teamVM: teamVM, teamPlayersVM: teamPlayersVM)
             }
+            .currentPageIndex($currentPage)
         }
-        .navigationTitle("Book List")
+        .listStyle(GroupedListStyle())
+        
         //.navigationBarHidden(true)
         
         

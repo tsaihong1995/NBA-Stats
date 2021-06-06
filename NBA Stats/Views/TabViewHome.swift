@@ -18,13 +18,9 @@ struct TabViewHome: View {
                 Image(systemName: "list.bullet.indent")
                 Text("Categories")
             }
-            Text("Favorite").tabItem {
-                Image(systemName: "heart")
-                Text("Favorites")
-            }
-            Text("More").tabItem {
+            Text("Setting").tabItem {
                 Image(systemName: "ellipsis")
-                Text("More")
+                Text("Setting")
             }
         }
     }

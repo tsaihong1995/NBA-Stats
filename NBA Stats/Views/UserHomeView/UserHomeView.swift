@@ -37,11 +37,11 @@ struct UserHomeView: View {
                                             .navigationBarTitle(Text("\(team.team.name)"), displayMode: .inline)
                             ) {
                               EmptyView()
-                            }.buttonStyle(PlainButtonStyle())
+                            }
                         }
                         
                     }
-                    .listStyle(InsetListStyle())
+                    .listStyle(PlainListStyle())
                 }
             }
             .navigationTitle(Text("Your Teams"))
@@ -58,7 +58,8 @@ struct UserHomeView: View {
                 SelectTeamsView(teamListVM: teamListVM)
                     .padding(.top)
             }
-        }
+        }//: Navigation View
+        .navigationViewStyle(StackNavigationViewStyle())
 
     }
 }

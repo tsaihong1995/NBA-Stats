@@ -37,6 +37,7 @@ struct PlayerListRow: View {
             
             Spacer()
         }
+        
     }
 }
 
